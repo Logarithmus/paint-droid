@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="select_tool">Select tool:</string>
+    <string name="enter_text">Enter text:</string>
+    <string name="sample_text">Sample text</string>
     <string name="clear_screen_question">Clear screen?</string>
     <string name="ok">OK</string>
     <string name="yes">Yes</string>

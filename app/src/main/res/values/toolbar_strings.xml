@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="pen">Pen</string>
+    <string name="rectangle">Rectangle</string>
+    <string name="oval">Oval</string>
+    <string name="label">Label</string>
     <string name="pen_width">Pen width</string>
     <string name="pen_color">Pen color</string>
     <string name="undo">Undo</string>

@@ -1,7 +1,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/pen_width"
+
+    <item android:id="@+id/tool"
           android:icon="@drawable/ic_twotone_create_24"
+          app:showAsAction="always"
+          android:title="@string/pen"/>
+
+    <item android:id="@+id/pen_width"
+          android:icon="@drawable/ic_twotone_line_width_24"
           app:showAsAction="always"
           android:title="@string/pen_width"/>
 
@@ -20,11 +26,6 @@
           android:iconTint="@android:color/darker_gray"
           app:showAsAction="always"
           android:title="@string/redo"/>
-
-    <item android:id="@+id/eraser"
-          android:icon="@drawable/ic_twotone_clear_24"
-          app:showAsAction="always"
-          android:title="@string/eraser"/>
 
     <item android:id="@+id/clear_screen"
           android:icon="@drawable/ic_twotone_delete_24"
