@@ -121,11 +121,15 @@ class DrawView(context: Context?, attrs: AttributeSet?): View(context, attrs) {
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        steps.take(currentStepIndex + 1).forEach{ when (val shape = it.shape) {
-            is Curve     -> canvas?.drawPath(shape.path, it.paint)
-            is Rectangle -> canvas?.drawRect(shape.rect, it.paint)
-            is Oval      -> canvas?.drawOval(shape.rect, it.paint)
-            is Label     -> canvas?.drawText(shape.text, shape.point.x, shape.point.y, it.paint)
-        }}
+        canvas?.apply {
+            steps.take(currentStepIndex + 1).forEach{
+                when (val shape = it.shape) {
+                    is Curve     -> drawPath(shape.path, it.paint)
+                    is Rectangle -> drawRect(shape.rect, it.paint)
+                    is Oval      -> drawOval(shape.rect, it.paint)
+                    is Label     -> drawText(shape.text, shape.point.x, shape.point.y, it.paint)
+                }
+            }
+        }
     }
 }
